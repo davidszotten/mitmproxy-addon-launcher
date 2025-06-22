@@ -1,6 +1,6 @@
 [project]
 name = "mitmproxy-addon-launcher"
-version = "0.1.0"
+version = "0.1.1"
 description = "Load mitmproxy/mitmweb addons from entry points"
 readme = "README.md"
 license-expression = "MIT"
