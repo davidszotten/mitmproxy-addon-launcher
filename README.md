@@ -4,15 +4,19 @@ Load mitmproxy/mitmweb addons from entry points
 
 ## Usage:
 
-```
-mitmproxy-addon-launcher <any args to mitmproxy>
-```
-
-or
-
+For mitmproxy cli:
 
 ```
-mitmweb-addon-launcher <any args to mitmweb>
+uvx --with=<library-with-addon> mitmproxy-addon-launcher <any args to mitmproxy>
+```
+
+or for `mitmweb`/`mitmdump`:
+
+```
+uvx \
+    --from=mitmproxy-addon-launcher \
+    --with=<library-with-addon> \
+    mitmweb-addon-launcher <any args to mitmproxy>
 ```
 
 ## Creating an addon packege
