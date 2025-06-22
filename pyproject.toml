@@ -1,0 +1,23 @@
+[project]
+name = "mitmproxy-addon-launcher"
+version = "0.1.0"
+description = "Load mitmproxy/mitmweb addons from entry points"
+readme = "README.md"
+license-expression = "MIT"
+license-file = "LICENSE"
+requires-python = ">=3.10"
+dependencies = ['mitmproxy']
+
+[dependency-groups]
+dev = [
+  "pdbpp"
+]
+
+[project.scripts]
+mitmproxy-addon-launcher = "mitmproxy_addon_launcher:main"
+mitmweb-addon-launcher = "mitmproxy_addon_launcher:main_web"
+mitmdump-addon-launcher = "mitmproxy_addon_launcher:main_dump"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
