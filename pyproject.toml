@@ -1,12 +1,15 @@
 [project]
 name = "mitmproxy-addon-launcher"
-version = "0.1.1"
+version = "0.1.2"
 description = "Load mitmproxy/mitmweb addons from entry points"
 readme = "README.md"
 license-expression = "MIT"
 license-file = "LICENSE"
 requires-python = ">=3.10"
 dependencies = ['mitmproxy']
+
+[project.urls]
+github = "https://github.com/davidszotten/mitmproxy-addon-launcher"
 
 [dependency-groups]
 dev = [
